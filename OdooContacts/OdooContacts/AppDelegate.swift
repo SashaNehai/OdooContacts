@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  OdooContacts
 //
-//  Created by Александр Нехай on 3/28/21.
+//  Created by Александр Нехай on 3/22/21.
 //
 
 import UIKit

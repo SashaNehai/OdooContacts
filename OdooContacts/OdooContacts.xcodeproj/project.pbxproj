@@ -3,17 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A2C962152420EAEEAF9821EA /* Pods_OdooContacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB00A4F47D69692C586CF414 /* Pods_OdooContacts.framework */; };
 		FBAEED4726105FF6008C53B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED4626105FF6008C53B5 /* AppDelegate.swift */; };
 		FBAEED4926105FF6008C53B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED4826105FF6008C53B5 /* SceneDelegate.swift */; };
-		FBAEED4B26105FF6008C53B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED4A26105FF6008C53B5 /* ViewController.swift */; };
 		FBAEED4E26105FF6008C53B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAEED4C26105FF6008C53B5 /* Main.storyboard */; };
 		FBAEED5026105FF7008C53B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBAEED4F26105FF7008C53B5 /* Assets.xcassets */; };
 		FBAEED5326105FF7008C53B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAEED5126105FF7008C53B5 /* LaunchScreen.storyboard */; };
+		FBAEED662610E7B6008C53B5 /* TagsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED622610E7B6008C53B5 /* TagsModel.swift */; };
+		FBAEED672610E7B6008C53B5 /* ContactsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED632610E7B6008C53B5 /* ContactsListModel.swift */; };
+		FBAEED682610E7B6008C53B5 /* AuthenticateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED642610E7B6008C53B5 /* AuthenticateModel.swift */; };
+		FBAEED692610E7B6008C53B5 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED652610E7B6008C53B5 /* Method.swift */; };
+		FBAEED802610E7FF008C53B5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED6E2610E7FF008C53B5 /* UserModel.swift */; };
+		FBAEED812610E7FF008C53B5 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED6F2610E7FF008C53B5 /* ContactModel.swift */; };
+		FBAEED822610E7FF008C53B5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED712610E7FF008C53B5 /* BaseViewController.swift */; };
+		FBAEED832610E7FF008C53B5 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED722610E7FF008C53B5 /* ContactsViewController.swift */; };
+		FBAEED842610E7FF008C53B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED732610E7FF008C53B5 /* LoginViewController.swift */; };
+		FBAEED852610E7FF008C53B5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED752610E7FF008C53B5 /* LoginViewModel.swift */; };
+		FBAEED862610E7FF008C53B5 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED762610E7FF008C53B5 /* ContactsViewModel.swift */; };
+		FBAEED872610E7FF008C53B5 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED782610E7FF008C53B5 /* ViewModelable.swift */; };
+		FBAEED882610E7FF008C53B5 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED792610E7FF008C53B5 /* APIRouter.swift */; };
+		FBAEED892610E7FF008C53B5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED7A2610E7FF008C53B5 /* NetworkService.swift */; };
+		FBAEED8A2610E7FF008C53B5 /* XMLContactsParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED7B2610E7FF008C53B5 /* XMLContactsParseManager.swift */; };
+		FBAEED8B2610E7FF008C53B5 /* XMLLoginParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED7C2610E7FF008C53B5 /* XMLLoginParseManager.swift */; };
+		FBAEED8C2610E7FF008C53B5 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED7E2610E7FF008C53B5 /* ContactCell.swift */; };
+		FBAEED8D2610E7FF008C53B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAEED7F2610E7FF008C53B5 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +40,28 @@
 		FBAEED4326105FF6008C53B5 /* OdooContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OdooContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBAEED4626105FF6008C53B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBAEED4826105FF6008C53B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FBAEED4A26105FF6008C53B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBAEED4D26105FF6008C53B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBAEED4F26105FF7008C53B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBAEED5226105FF7008C53B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBAEED5426105FF7008C53B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBAEED622610E7B6008C53B5 /* TagsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsModel.swift; sourceTree = "<group>"; };
+		FBAEED632610E7B6008C53B5 /* ContactsListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsListModel.swift; sourceTree = "<group>"; };
+		FBAEED642610E7B6008C53B5 /* AuthenticateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateModel.swift; sourceTree = "<group>"; };
+		FBAEED652610E7B6008C53B5 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		FBAEED6E2610E7FF008C53B5 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		FBAEED6F2610E7FF008C53B5 /* ContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		FBAEED712610E7FF008C53B5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FBAEED722610E7FF008C53B5 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		FBAEED732610E7FF008C53B5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FBAEED752610E7FF008C53B5 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FBAEED762610E7FF008C53B5 /* ContactsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		FBAEED782610E7FF008C53B5 /* ViewModelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
+		FBAEED792610E7FF008C53B5 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		FBAEED7A2610E7FF008C53B5 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FBAEED7B2610E7FF008C53B5 /* XMLContactsParseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLContactsParseManager.swift; sourceTree = "<group>"; };
+		FBAEED7C2610E7FF008C53B5 /* XMLLoginParseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLLoginParseManager.swift; sourceTree = "<group>"; };
+		FBAEED7E2610E7FF008C53B5 /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		FBAEED7F2610E7FF008C53B5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +90,6 @@
 				1B8733CC34EE621511C31945 /* Pods-OdooContacts.debug.xcconfig */,
 				71E0416003B8C71F72B7C27F /* Pods-OdooContacts.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +114,80 @@
 		FBAEED4526105FF6008C53B5 /* OdooContacts */ = {
 			isa = PBXGroup;
 			children = (
+				FBAEED8F2610E812008C53B5 /* APIModel */,
+				FBAEED7F2610E7FF008C53B5 /* Constants.swift */,
+				FBAEED6D2610E7FF008C53B5 /* Models */,
+				FBAEED772610E7FF008C53B5 /* Services */,
+				FBAEED702610E7FF008C53B5 /* ViewControllers */,
+				FBAEED742610E7FF008C53B5 /* ViewModel */,
+				FBAEED7D2610E7FF008C53B5 /* Views */,
 				FBAEED4626105FF6008C53B5 /* AppDelegate.swift */,
 				FBAEED4826105FF6008C53B5 /* SceneDelegate.swift */,
-				FBAEED4A26105FF6008C53B5 /* ViewController.swift */,
 				FBAEED4C26105FF6008C53B5 /* Main.storyboard */,
 				FBAEED4F26105FF7008C53B5 /* Assets.xcassets */,
 				FBAEED5126105FF7008C53B5 /* LaunchScreen.storyboard */,
 				FBAEED5426105FF7008C53B5 /* Info.plist */,
 			);
 			path = OdooContacts;
+			sourceTree = "<group>";
+		};
+		FBAEED6D2610E7FF008C53B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBAEED6E2610E7FF008C53B5 /* UserModel.swift */,
+				FBAEED6F2610E7FF008C53B5 /* ContactModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FBAEED702610E7FF008C53B5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FBAEED712610E7FF008C53B5 /* BaseViewController.swift */,
+				FBAEED722610E7FF008C53B5 /* ContactsViewController.swift */,
+				FBAEED732610E7FF008C53B5 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FBAEED742610E7FF008C53B5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FBAEED752610E7FF008C53B5 /* LoginViewModel.swift */,
+				FBAEED762610E7FF008C53B5 /* ContactsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FBAEED772610E7FF008C53B5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FBAEED782610E7FF008C53B5 /* ViewModelable.swift */,
+				FBAEED792610E7FF008C53B5 /* APIRouter.swift */,
+				FBAEED7A2610E7FF008C53B5 /* NetworkService.swift */,
+				FBAEED7B2610E7FF008C53B5 /* XMLContactsParseManager.swift */,
+				FBAEED7C2610E7FF008C53B5 /* XMLLoginParseManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FBAEED7D2610E7FF008C53B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBAEED7E2610E7FF008C53B5 /* ContactCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBAEED8F2610E812008C53B5 /* APIModel */ = {
+			isa = PBXGroup;
+			children = (
+				FBAEED642610E7B6008C53B5 /* AuthenticateModel.swift */,
+				FBAEED632610E7B6008C53B5 /* ContactsListModel.swift */,
+				FBAEED652610E7B6008C53B5 /* Method.swift */,
+				FBAEED622610E7B6008C53B5 /* TagsModel.swift */,
+			);
+			path = APIModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +304,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBAEED4B26105FF6008C53B5 /* ViewController.swift in Sources */,
+				FBAEED8C2610E7FF008C53B5 /* ContactCell.swift in Sources */,
+				FBAEED842610E7FF008C53B5 /* LoginViewController.swift in Sources */,
+				FBAEED682610E7B6008C53B5 /* AuthenticateModel.swift in Sources */,
+				FBAEED832610E7FF008C53B5 /* ContactsViewController.swift in Sources */,
+				FBAEED862610E7FF008C53B5 /* ContactsViewModel.swift in Sources */,
+				FBAEED892610E7FF008C53B5 /* NetworkService.swift in Sources */,
+				FBAEED882610E7FF008C53B5 /* APIRouter.swift in Sources */,
+				FBAEED812610E7FF008C53B5 /* ContactModel.swift in Sources */,
+				FBAEED8A2610E7FF008C53B5 /* XMLContactsParseManager.swift in Sources */,
+				FBAEED802610E7FF008C53B5 /* UserModel.swift in Sources */,
+				FBAEED8D2610E7FF008C53B5 /* Constants.swift in Sources */,
 				FBAEED4726105FF6008C53B5 /* AppDelegate.swift in Sources */,
+				FBAEED822610E7FF008C53B5 /* BaseViewController.swift in Sources */,
+				FBAEED852610E7FF008C53B5 /* LoginViewModel.swift in Sources */,
+				FBAEED662610E7B6008C53B5 /* TagsModel.swift in Sources */,
 				FBAEED4926105FF6008C53B5 /* SceneDelegate.swift in Sources */,
+				FBAEED872610E7FF008C53B5 /* ViewModelable.swift in Sources */,
+				FBAEED8B2610E7FF008C53B5 /* XMLLoginParseManager.swift in Sources */,
+				FBAEED692610E7B6008C53B5 /* Method.swift in Sources */,
+				FBAEED672610E7B6008C53B5 /* ContactsListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
